@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Hospital Micheletto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 90%; /* Aumentando a largura da container */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            width: 45%; /* Ajustando a largura para que caibam 2 por linha */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left; /* Alinhando o texto à esquerda */
+        }
+        img {
+            width: 100%; /* Faz as imagens ocuparem toda a largura do card */
+            height: auto;
+            max-width: 90%; /* Ajustando a largura para não ficar muito larga */
+            max-height: 400px; /* Aumentando a altura máxima */
+            object-fit: contain; /* Faz a imagem se ajustar proporcionalmente */
+            margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%; /* Para telas menores, cada card vai ocupar toda a linha */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Relatórios - Hospital Micheletto</h1>
+        <p>Seja bem-vindo</p>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Relatório 1</h2>
+            <p>Descrição do relatório.</p>
+            <img src="ClassificacaoDeRisco.png" alt="Classificação de Risco">
+        </div>
+        
+        <div class="card">
+            <h2>Relatório 2</h2>
+            <p>Descrição do relatório.</p>
+            <img src="DensidadeIdade.png" alt="Densidade de Idade">
+        </div>
+
+        <div class="card">
+            <h2>Relatório 3</h2>
+            <p>Descrição do relatório.</p>
+            <img src="Genero.png" alt="Gênero">
+        </div>
+
+        <div class="card">
+            <h2>Relatório 4</h2>
+            <p>Descrição do relatório.</p>
+            <img src="IdadeDosPacientes.png" alt="Idade dos Pacientes">
+        </div>
+
+        <div class="card">
+            <h2>Relatório 5</h2>
+            <p>Descrição do relatório.</p>
+            <img src="NumeroAtendimentosmes.png" alt="Número de Atendimentos por Mês">
+        </div>
+
+        <div class="card">
+            <h2>Relatório 6</h2>
+            <p>Descrição do relatório.</p>
+            <img src="NumeroClassificacaoMes.png" alt="Número de Classificações por Mês">
+        </div>
+    </div>
+</body>
+</html>
